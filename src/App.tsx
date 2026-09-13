@@ -1,0 +1,13 @@
+import { Navbar } from './components/layout/Navbar'
+import { Footer, FinalCta } from './components/layout/Footer'
+import { Hero } from './components/landing/Hero'
+import { ValueStrip } from './components/landing/ValueStrip'
+import { Features } from './components/landing/Features'
+import { Process } from './components/landing/Process'
+import { StoreMap } from './components/landing/StoreMap'
+import { Privacy } from './components/landing/Privacy'
+import { Offline } from './components/landing/Offline'
+import { Workflow } from './components/landing/Workflow'
+import { MobileCompanion } from './components/landing/MobileCompanion'
+import { EdgeImpact } from './components/landing/EdgeImpact'
+export default function App(){return <><Navbar/><Hero/><ValueStrip/><Features/><Process/><StoreMap/><Privacy/><Offline/><Workflow/><MobileCompanion/><EdgeImpact/><FinalCta/><Footer/></>}

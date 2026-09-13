@@ -1,0 +1,5 @@
+import { motion } from 'framer-motion'
+import { Radar, Orbit, Lightbulb, Send, CircleCheck, ArrowRight } from 'lucide-react'
+import { SectionHeading } from '../ui/SectionHeading'
+const flow=[[Radar,'Detected','Shelf stock decreasing'],[Orbit,'Predicted','OOS in 24 minutes'],[Lightbulb,'Recommended','Replenish Shelf A3'],[Send,'Assigned','Task sent to staff'],[CircleCheck,'Resolved','Shelf restored']] as const
+export function Workflow(){return <section className="workflow"><div className="section"><SectionHeading eyebrow="INSIGHT TO ACTION" title="Not another dashboard. A decision platform." copy="Niriksh closes the loop between what the store sees and what your team does next."/><div className="workflow-row">{flow.map(([Icon,label,text],i)=><div className="flow-wrap" key={label}><motion.article initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.1}}><span className="flow-icon"><Icon/></span><small>0{i+1}</small><h3>{label}</h3><p>{text}</p></motion.article>{i<4&&<ArrowRight className="flow-arrow"/>}</div>)}</div></div></section>}

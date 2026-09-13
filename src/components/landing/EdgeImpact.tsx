@@ -1,0 +1,6 @@
+import { Cpu, CircuitBoard, HardDrive, Cloud, PackageSearch, TimerReset, ScanLine, CloudOff } from 'lucide-react'
+import { impacts } from '../../data/content'
+import { SectionHeading } from '../ui/SectionHeading'
+const compute=[[CircuitBoard,'Hexagon NPU','AI inference'],[Cpu,'CPU','Tracking + event logic'],[HardDrive,'Local Storage','Offline events'],[Cloud,'Cloud','Aggregated metadata only']] as const
+export function EdgeImpact(){return <><section className="section edge-section"><SectionHeading eyebrow="DISTRIBUTED INTELLIGENCE" title="Compute where the context lives." copy="Optimised edge models keep sensitive processing local while the cloud coordinates operational intelligence."/><div className="compute-grid">{compute.map(([Icon,title,copy],i)=><article key={title}><span>0{i+1}</span><Icon/><h3>{title}</h3><p>{copy}</p></article>)}</div><div className="compute-note"><i/> NPU-accelerated inference <i/> Local-first processing <i/> Metadata-only synchronisation</div></section><section className="section impact"><SectionHeading eyebrow="BUSINESS IMPACT" title="Better outcomes, without invented promises."/><div className="impact-grid">{impacts.map(([Icon,title,copy])=><article key={title}><Icon/><h3>{title}</h3><p>{copy}</p><span>Learn more →</span></article>)}</div></section></>}
+void PackageSearch;void TimerReset;void ScanLine;void CloudOff

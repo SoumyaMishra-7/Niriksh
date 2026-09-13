@@ -1,0 +1,4 @@
+import { motion } from 'framer-motion'
+import { Camera, Cpu, Sparkles, ClipboardCheck, ShieldCheck, ChevronRight } from 'lucide-react'
+const items=[[Camera,'Existing Cameras'],[Cpu,'Edge AI'],[Sparkles,'Predictive Intelligence'],[ClipboardCheck,'Recommended Action'],[ShieldCheck,'Privacy Preserved']] as const
+export function ValueStrip(){return <motion.section className="value-strip section" initial="hidden" whileInView="show" viewport={{once:true}} variants={{show:{transition:{staggerChildren:.1}}}}>{items.map(([Icon,label],i)=><div className="value-item-wrap" key={label}><motion.div className="value-item" variants={{hidden:{opacity:0,y:12},show:{opacity:1,y:0}}}><Icon size={18}/><span>{label}</span></motion.div>{i<items.length-1&&<ChevronRight className="value-arrow" size={17}/>}</div>)}</motion.section>}
