@@ -10,4 +10,5 @@ import './styles/dashboard-responsive.css'
 import './styles/loader.css'
 import './styles/staff.css'
 import './styles/staff-detail.css'
+import './styles/manager-command-center.css'
 createRoot(document.getElementById('root')!).render(<StrictMode><App /></StrictMode>)
