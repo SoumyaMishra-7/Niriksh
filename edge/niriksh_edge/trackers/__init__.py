@@ -1,0 +1,1 @@
+from niriksh_edge.trackers.bytetrack import ByteTrackAdapter

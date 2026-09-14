@@ -1,0 +1,6 @@
+cameras:
+  - configs/shelf_demo.yaml
+  - configs/shopper_demo.yaml
+  - configs/queue_demo.yaml
+process_model: one_process_per_camera
+debug: {save_frames: false}

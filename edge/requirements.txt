@@ -1,0 +1,9 @@
+numpy>=1.26
+opencv-python-headless>=4.9
+httpx>=0.27
+PyYAML>=6.0
+pydantic>=2.7
+pytest>=8.0
+# Optional detector/runtime extras:
+# ultralytics>=8.3       # AGPL-3.0; review licensing before distribution
+# onnxruntime>=1.18

@@ -1,0 +1,2 @@
+export const hourlyData=[{time:'10am',footfall:32,queue:2,shelf:94},{time:'11am',footfall:48,queue:3,shelf:91},{time:'12pm',footfall:71,queue:5,shelf:88},{time:'1pm',footfall:96,queue:7,shelf:84},{time:'2pm',footfall:82,queue:5,shelf:81},{time:'3pm',footfall:108,queue:8,shelf:79},{time:'4pm',footfall:128,queue:6,shelf:76}]
+export const dwellData=[{name:'Grocery',value:5.1},{name:'Electronics',value:4.3},{name:'Personal Care',value:3.2},{name:'Checkout',value:2.1},{name:'Entrance',value:.7}]

@@ -1,0 +1,1 @@
+export const edgeHealth={status:'Healthy',node:'EDGE-HYD-01',internet:'Online',sync:'Active',pending:12,camerasOnline:'14 / 15',analytics:'Running',storage:38,cpu:42,npu:67,temperature:54,rawVideo:'0 MB',identities:0,metadataSync:'Enabled'}

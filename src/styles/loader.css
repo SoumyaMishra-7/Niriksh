@@ -1,0 +1,2 @@
+.route-loader{position:fixed;inset:0;background:#f3f5f2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:#68746e;font-size:11px}.route-loader i{width:28px;height:28px;border-radius:50%;border:2px solid #d8dfd9;border-top-color:#315d4e;animation:route-spin .8s linear infinite}@keyframes route-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.route-loader i{animation:none}}

@@ -1,0 +1,12 @@
+camera_id: CAM-01
+store_id: store-hyd
+zone_id: zone-ent
+role: entrance
+source: samples/entrance/store.mp4
+frame_sampling: {target_fps: 8, adaptive: false}
+roi: [[0,0],[1280,0],[1280,720],[0,720]]
+entry_line: [[100,400],[1180,400]]
+zones:
+  entrance: {polygon: [[0,300],[1280,300],[1280,720],[0,720]]}
+  electronics: {polygon: [[640,0],[1280,0],[1280,300],[640,300]]}
+debug: {save_frames: false}

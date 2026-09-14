@@ -1,0 +1,11 @@
+camera_id: CAM-02
+store_id: store-hyd
+zone_id: zone-gro
+role: shelf
+source: samples/shelf/store.mp4
+shelf_id: shelf-a3
+frame_sampling: {target_fps: 5, adaptive: false}
+roi: [[80,60],[560,60],[560,420],[80,420]]
+detection: {min_confidence: 0.45}
+shelf: {low_stock_threshold: 25, empty_threshold: 8, min_confidence: 0.45, coverage_at_full: 0.65}
+debug: {save_frames: false}

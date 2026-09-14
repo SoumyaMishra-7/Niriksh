@@ -35,3 +35,18 @@ src/
 ```
 
 The interface respects `prefers-reduced-motion`, supports keyboard navigation, and uses only lightweight CSS/UI visualizations—no customer imagery or raw-video assets.
+
+## Backend and live demo
+
+```bash
+cd backend
+python -m pip install -r requirements.txt
+python -m app.db.seed
+uvicorn app.main:app --reload
+```
+
+API documentation is at `http://localhost:8000/docs`. Start the deterministic live scenario with `POST /api/v1/demo/start`; use `/demo/reset` to restore seed data and `/demo/connectivity` to demonstrate offline metadata queuing. The frontend connects through `src/services/api` and `useNirikshLiveStore`.
+
+## Edge vision
+
+The independently runnable [`edge/`](edge/) package converts video files, webcams, or RTSP streams into privacy-safe shelf, footfall, dwell, heatmap, queue, and camera-health observations. See [`edge/README.md`](edge/README.md) for model setup, demo commands, privacy behavior, evaluation utilities, and the future Qualcomm QAIRT/QNN path.

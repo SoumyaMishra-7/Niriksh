@@ -4,3 +4,9 @@ dist
 *.local
 *.log
 .vite
+__pycache__/
+*.py[cod]
+.pytest_cache/
+edge/samples/**/*.mp4
+edge/*.db
+backend/*.db

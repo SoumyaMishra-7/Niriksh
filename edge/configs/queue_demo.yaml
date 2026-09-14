@@ -1,0 +1,10 @@
+camera_id: CAM-04
+store_id: store-hyd
+zone_id: zone-check
+role: checkout
+source: samples/checkout/store.mp4
+queue_id: queue-2
+frame_sampling: {target_fps: 8, adaptive: false}
+roi: [[220,100],[1100,100],[1180,700],[160,700]]
+service_line: [[250,180],[1050,180]]
+debug: {save_frames: false}

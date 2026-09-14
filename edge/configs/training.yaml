@@ -1,0 +1,6 @@
+model: yolo11n.pt
+image_size: 640
+classes: [product, empty_slot]
+dataset_yaml: datasets/retail/data.yaml
+epochs: 50
+notes: Run manually only after validating dataset licensing and labels.
