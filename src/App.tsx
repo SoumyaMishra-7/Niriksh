@@ -13,8 +13,8 @@ import { Workflow } from './components/landing/Workflow'
 import { MobileCompanion } from './components/landing/MobileCompanion'
 import { EdgeImpact } from './components/landing/EdgeImpact'
 const DashboardShell=lazy(()=>import('./components/dashboard/DashboardShell').then(m=>({default:m.DashboardShell})))
-const Overview=lazy(()=>import('./pages/dashboard/Overview'))
-const LiveStore=lazy(()=>import('./pages/dashboard/LiveStore'))
+const Overview=lazy(()=>import('./pages/dashboard/ManagerOverview'))
+const LiveStore=lazy(()=>import('./pages/dashboard/ManagerLiveStore'))
 const Shelves=lazy(()=>import('./pages/dashboard/Shelves'))
 const Queues=lazy(()=>import('./pages/dashboard/Queues'))
 const ShopperAnalytics=lazy(()=>import('./pages/dashboard/ShopperAnalytics'))
